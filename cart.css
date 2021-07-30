@@ -1,0 +1,139 @@
+/* Cart Page Styling */
+*{  
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative;    
+    background-color: limegreen;
+    border: 2px solid black;
+}
+
+#logo{
+    color: black;
+    font-weight: bold;
+    margin-right: 300px;
+}
+#top{
+    display: flex;
+}
+#top li{
+    font-weight: bold;
+    font-size: 1.3rem;
+    list-style: none;
+}
+#top li a{
+    display: block;
+    margin: 20px 20px;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: black;
+}
+#top li a:hover{
+    color: #ffffff;
+    background-color: black;
+    border-radius: 50px;
+}
+#top ion-icon{
+    vertical-align: bottom;
+    font-size: 25px;
+    padding-right: 3px;
+    color: green;
+}
+h3{
+    margin: 20px 130px;
+    color: limegreen;
+    font-size: 25px;
+    font-weight: bold;   
+}
+#submit{
+    display: inline-block;
+    width: 150px;
+    height: 34px;
+    margin: 20px 70px; 
+    background-color: limegreen;
+    border: 2px solid black;
+}
+.products-contain{
+max-width: 650px;
+justify-content: space-around;
+margin: 0 auto;
+margin-top: 50px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 50px;
+padding-bottom: 100px;
+}
+.products-contain ion-icon{
+    font-size: 25px;
+    color: limegreen;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid limegreen;
+    margin: 0 auto;
+    font-size: 25px;
+}
+.product-title{
+    width: 45%;
+}
+.price{
+    width: 15%;
+    border-bottom: 1px solid limegreen;
+    display: flex;
+    align-items: center;
+}
+.quantity{
+    width: 30%;
+    border-bottom: 1px solid limegreen;
+    display: flex;
+    align-items: center;
+}
+.total{
+    width: 10%;
+    border-bottom: 1px solid limegreen;
+    display: flex;
+    align-items: center;
+}
+.product{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid limegreen;
+}
+.product ion-icon{
+    cursor: pointer;
+    font-size: 28px;
+}
+.products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 19px;
+}
+.products img{
+    width: 80px;
+}
+.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 10px;
+}
+.basketTotalTitle{
+    width: 30%;
+}

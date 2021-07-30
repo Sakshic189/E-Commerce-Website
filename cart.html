@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="/cart.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <h2>HE&SHE STORE</h2>
+            </div>
+            <ul id="top">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/product.html">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="cart"><a href="/cart.html">
+                        <ion-icon name="bag-check-outline"></ion-icon>Cart <span>0</span>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <h3>Your Cart Items</h3>
+
+    <div class="products-contain">
+        <div class="product-header">
+            <h5 class="product-title">Product</h5>
+            <h5 class="price">Price</h5>
+            <h5 class="quantity">Quantity</h5>
+            <h5 class="total">Total</h5>
+        </div>
+
+        <div class="products">
+
+        </div>
+
+        <input type="text" name="name" id="namebox" placeholder="Enter Name"><br> <br>
+        <input type="text" name="address" id="addressbox" placeholder="Enter Address"><br> <br>
+        <br><br>
+        <button id="submit">Submit</button>
+
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+        <!-- Config -->
+        <script id="MainScript">
+            var firebaseConfig = {
+                apiKey: "AIzaSyB_vvfqIupL9XOGSfWmoulK7TyYG5fQJjY",
+                authDomain: "projectdatabase-34054.firebaseapp.com",
+                projectId: "projectdatabase-34054",
+                storageBucket: "projectdatabase-34054.appspot.com",
+                messagingSenderId: "522502113715",
+                appId: "1:522502113715:web:06efd5d68f59aad538a3c6"
+            };
+            firebase.initializeApp(firebaseConfig);
+
+            // Ready Data
+
+            var nameV, addV;
+
+            function Ready() {
+                nameV = document.getElementById('namebox').value;
+                addV = document.getElementById('addressbox').value;
+            }
+
+            // Submit Button
+            document.getElementById('submit').onclick = function () {
+                Ready();
+                firebase.database().ref('customer/' + nameV).set({
+                    NameOfCustomer: nameV,
+                    Address: addV
+                });
+            }
+
+        </script>
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <script src="/index.js"></script>
+</body>
+
+</html>

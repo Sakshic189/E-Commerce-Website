@@ -1,0 +1,357 @@
+/* CSS Reset*/
+*{  
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+/* Home Page Designing */
+ body::before{
+    background: url('/images/1.jpg')no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+} 
+
+/*CSS Variables*/
+:root{
+    --navbar-height: 40px;
+}
+
+/*Navbar Styling*/
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative;    
+}
+#navbar::before{
+    content: "";
+    background-color: #ffffff;
+    position: absolute;  
+    height: 100%; 
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#logo{
+    color: black;
+    font-weight: bold;
+    margin-right: 300px;
+}
+#top{
+    display: flex;
+}
+#top li{
+    font-weight: bold;
+    font-size: 1.3rem;
+    list-style: none;
+}
+#top li a{
+    display: block;
+    margin: 20px 20px;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: black;
+}
+#top li a:hover{
+    color: #ffffff;
+    background-color: black;
+    border-radius: 50px;
+}
+#top ion-icon{
+    vertical-align: bottom;
+    font-size: 25px;
+    padding-right: 3px;
+    color: green;
+}
+
+/* Section Styling */
+ h1{
+    margin: 60px 130px;
+    color: limegreen;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    margin: 10px 120px;
+    padding: 5px 10px;
+    line-height: 200%;
+}
+#click{
+    display: inline-block;
+    width: 150px;
+    height: 34px;
+    margin: 20px 70px; 
+    background-color: limegreen;
+    border: 2px solid black;
+}
+#click a{
+    display: inline-block;
+    width: 135px;
+    height: 24px;
+    color: #ffffff;
+    background-color: limegreen;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Collections */
+#wear{
+    display: flex;
+    height: 500px;
+}
+.box img{
+    display: flex;
+    height: 80%;
+    width: 28rem;
+    margin-top: 20px;
+    margin-left: 28px;
+    margin-right: 20px;
+
+} 
+.c{
+    display: inline-block;
+    width: 350px;
+    height: 50px;
+    margin: 25px 73px;
+    background-color: rgb(117, 209, 117);
+    border: 2px solid black;
+}
+.c a{
+    display: inline-block;
+    color: black;
+    font-size: 25px;
+    padding: 7px 82px;
+    width: 180px;
+    background-color: rgb(117, 209, 117);
+    text-decoration: none;
+}
+
+/* Poster */
+#poster div img{
+    width: 100%;
+    height: 550px;
+    margin-top: 5px;
+}
+
+/* Brands */
+#brands{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+/* Footer */
+#foot{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+#foot::after{
+    content: "";
+    background-color: #77f588;
+    position: absolute;  
+    height: 100%; 
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#name{
+    display: flex;
+    font-size: 1.5rem;
+    margin:auto 50px;
+    margin-top: 45px;
+    padding-bottom: 20px;
+}
+.info{
+    display: flex;
+    margin:auto 50px;
+    padding: 8px 8px;
+    font-size: 25px;
+}
+#tag h1{
+    display: flex;
+    font-size: 28px;
+    margin:auto 50px;
+    padding: 30px 30px;  
+}
+/* Home Page Styling End */
+
+/* Products Page Styling */
+/* Womens Wear */
+h3{
+    margin: 60px 130px;
+    color: limegreen;
+    font-size: 35px;
+    font-weight: bold;   
+}
+
+#women{
+    display: flex;
+    width: 100%;
+    height: 550px;
+}
+#women img{
+    display: flex;
+    height: 72%;
+    width: 21rem;
+    margin-top: 20px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+#women p{
+    display: flex;
+    justify-content: center;
+    margin: 10px 60px;
+    font-size: 23px;
+    font-weight: bold;
+    color: limegreen;
+}
+#womens{
+    display: flex;
+    width: 100%;
+    height: 550px;
+}
+#womens img{
+    display: flex;
+    height: 72%;
+    width: 21rem;
+    margin-top: 20px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+#womens p{
+    display: flex;
+    justify-content: center;
+    margin: 10px 60px;
+    font-size: 23px;
+    font-weight: bold;
+    color: limegreen;
+}
+.add-cart{
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    height: 30px;
+    margin: 3px auto;
+    color: black;
+    background-color: #ffffff;
+    border:3px solid limegreen;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.add-cart:hover{
+    color: #ffffff;
+    background-color: limegreen;
+}
+.d{
+border: 0.1px solid #dbd4d4;
+}
+
+ /* Mens Wear */
+#men{
+    display: flex;
+    width: 100%;
+    height: 550px;
+}
+#men img{
+    display: flex;
+    height: 72%;
+    width: 21rem;
+    margin-top: 20px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+#men p{
+    display: flex;
+    justify-content: center;
+    margin: 10px 60px;
+    font-size: 23px;
+    font-weight: bold;
+    color: limegreen;
+}
+#mens{
+    display: flex;
+    width: 100%;
+    height: 550px;
+}
+#mens img{
+    display: flex;
+    height: 72%;
+    width: 21rem;
+    margin-top: 20px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+#mens p{
+    display: flex;
+    justify-content: center;
+    margin: 10px 60px;
+    font-size: 23px;
+    font-weight: bold;
+    color: limegreen;
+}
+
+/* Kids Wear */
+#kid{
+    display: flex;
+    width: 100%;
+    height: 550px;
+}
+#kid img{
+    display: flex;
+    height: 72%;
+    width: 21rem;
+    margin-top: 20px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+#kid p{
+    display: flex;
+    justify-content: center;
+    margin: 10px 60px;
+    font-size: 23px;
+    font-weight: bold;
+    color: limegreen;
+}
+#kids{
+    display: flex;
+    width: 100%;
+    height: 550px;
+}
+#kids img{
+    display: flex;
+    height: 72%;
+    width: 21rem;
+    margin-top: 20px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+#kids p{
+    display: flex;
+    justify-content: center;
+    margin: 10px 60px;
+    font-size: 23px;
+    font-weight: bold;
+    color: limegreen;
+}
+
+/* Products Page Styling End */
+
+
+    
